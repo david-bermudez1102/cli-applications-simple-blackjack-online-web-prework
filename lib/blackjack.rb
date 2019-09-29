@@ -63,7 +63,7 @@ sum2 = initial_round
         sum2 = hit?(sum2)
         display_card_total(sum2)
       else
-        
+
         end_game(sum2)
       end
   end
