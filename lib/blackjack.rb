@@ -55,16 +55,19 @@ end
 #####################################################
 
 def runner
-  welcome
-  sum2 = initial_round
+welcome
+sum2 = initial_round
 
-  while sum2<=21 do
-      hit?(sum2)
-      display_card_total(sum2)
-      sum = hit?(sum2)
+  until sum2>21 do
+    hit?(sum2)
+
       if(sum2 > 21)
         end_game(sum2)
+      else
+        display_card_total(sum2)
       end
   end
+
+
 
 end
