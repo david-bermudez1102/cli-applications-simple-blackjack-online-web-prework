@@ -59,7 +59,7 @@ welcome
 sum2 = initial_round
 
   until sum2>21 do
-    
+
 
       if(sum2 > 21)
         end_game(sum2)
