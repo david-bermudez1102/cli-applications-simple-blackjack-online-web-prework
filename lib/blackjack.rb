@@ -59,12 +59,12 @@ welcome
 sum2 = initial_round
 
   until sum2>21 do
-      if(sum2 > 21)
-        end_game(sum2)
-      else
-                sum2 = hit?(sum2)
+      if(sum2 < 21)
+        sum2 = hit?(sum2)
         display_card_total(sum2)
-
+      else
+        
+        end_game(sum2)
       end
   end
 
